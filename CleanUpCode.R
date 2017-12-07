@@ -15,6 +15,7 @@ biocLite("genbankr")
 
 mutygb <- import(con = "sequence(1).gb")
 View(sources(mutygb))
+getSeq(mutygb)
 
 mutygb
 str(mutygb)
@@ -26,4 +27,8 @@ accession(mutygb)
 definition(mutygb)
 locus(mutygb)
 sources(mutygb)
+intergenic(mutygb)
+variants(mutygb)
 
+mutyacc <- read.table("mutY-accessions.seq")
+mutyacc
