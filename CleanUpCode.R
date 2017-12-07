@@ -13,8 +13,8 @@ install.packages("genbankr")
 source("https://bioconductor.org/biocLite.R")
 biocLite("genbankr")
 
-mutygb <- import(con = "mutY-seq20-full.gb")
-View(sources(mutygb2))
+mutygb <- import(con = "sequence(1).gb")
+View(sources(mutygb))
 getSeq(mutygb)
 
 mutygb
