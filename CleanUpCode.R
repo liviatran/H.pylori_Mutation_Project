@@ -13,8 +13,9 @@ install.packages("genbankr")
 source("https://bioconductor.org/biocLite.R")
 biocLite("genbankr")
 
-mutygb <- import(con = "sequence(1).gb")
-View(sources(mutygb))
+mutygb <- import(con = "mutY-seq20-full.gb")
+View(sources(mutygb2))
+getSeq(mutygb)
 
 mutygb
 str(mutygb)
@@ -26,4 +27,8 @@ accession(mutygb)
 definition(mutygb)
 locus(mutygb)
 sources(mutygb)
+intergenic(mutygb)
+variants(mutygb)
 
+mutyacc <- read.table("mutY-accessions.seq")
+mutyacc
