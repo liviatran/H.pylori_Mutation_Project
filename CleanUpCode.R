@@ -30,5 +30,10 @@ sources(mutygb)
 intergenic(mutygb)
 variants(mutygb)
 
+pos<-c(1:1606)
+df<-data.frame(pos)
+
 mutyacc <- read.table("mutY-accessions.seq")
-mutyacc
+df$Accessions=""
+df$Accesions=mutyacc
+View(df)
