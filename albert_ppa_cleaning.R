@@ -17,7 +17,7 @@ singleString <- paste(readLines(fileName), collapse=" ")
 
 #find beginning of sequence ID (accession number)
 #define pattern
-paste(ppa_df[1,],".*?//")-> accID
+paste(ppa_df[1,1],".*?//")-> accID
 
 source("function_create_substring_from_pattern.R")
 
