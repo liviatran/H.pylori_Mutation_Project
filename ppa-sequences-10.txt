@@ -1,0 +1,519 @@
+LOCUS       LC271887                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS291.
+ACCESSION   LC271887
+VERSION     LC271887.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS291"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45851.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ctggataagg aaagcggagc tttaatggtg gatagggtgc
+       61 tttatggggc acaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgca cttgttttaa gcgatgtggc ttttcaagcc gggagcgtgg
+      181 tgaaagcgcg cttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gatattgatg
+      301 atttatccaa acacacttta gataaaatca agcatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271886                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS286.
+ACCESSION   LC271886
+VERSION     LC271886.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS286"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45850.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ttggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc gcaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagct gggagcgtgg
+      181 tgaaagcgcg tttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gacattgatg
+      301 atttatccaa acacacttta gataaaatca aacatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271885                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS212.
+ACCESSION   LC271885
+VERSION     LC271885.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS212"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45849.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDSDPV
+                     DALVLSDVAFQAGSVVKVRLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ctggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc gcaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atagcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagcc gggagcgtgg
+      181 tgaaagtgcg cttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gacattgatg
+      301 atttatccaa acacacttta gataaaatca agcatttttt tgaaacttat aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271884                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS210.
+ACCESSION   LC271884
+VERSION     LC271884.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS210"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45848.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKHIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ttggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc gcaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagct gggagcgtgg
+      181 tgaaagcgcg tttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa cacattgatg
+      301 atttatccaa acacacttta gataaaatca aacatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271883                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS199.
+ACCESSION   LC271883
+VERSION     LC271883.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS199"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45847.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ttggataaag aaagcggggc tttaatggtg gatagagtgc
+       61 tttatggggc gcaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagcc gggagcgtgg
+      181 tgaaagcgcg cttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gacattgatg
+      301 atttatccaa acacacttta gataaaatca agcatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271882                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS195.
+ACCESSION   LC271882
+VERSION     LC271882.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS195"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45846.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ttggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc gcaaaattac cctgcaaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagcc gggagcgtgg
+      181 tgaaagcgcg cttggttggg gttttgaaca tggaagatga aagcgggatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gatattgatg
+      301 atttatccaa acacacttta gataaaatca agcatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271881                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS188.
+ACCESSION   LC271881
+VERSION     LC271881.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS188"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45845.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caagtatgaa ttggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc acaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagct gggagcgtgg
+      181 tgaaagcgcg tttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gacattgatg
+      301 atttatccaa acacacttta gataaaatca aacatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaagggt ttgaaaac
+//
+
+LOCUS       LC271880                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS178.
+ACCESSION   LC271880
+VERSION     LC271880.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS178"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45844.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGVDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caaatacgaa ttggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc gcaaaattac cctgcgaatt acggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagcc gggagtgtgg
+      181 tgaaagcacg cttggttggg gttttgaaca tggaagatga aagcggagtg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gatattgatg
+      301 atttatccaa acacacttta gataaaatca agcatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271879                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS177.
+ACCESSION   LC271879
+VERSION     LC271879.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS177"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45843.1"
+                     /translation="SNIQYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDGDPV
+                     DALVLSDVAFQAGSVVKVRLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDINDLS
+                     KHTLDKIKHFFETYKDLEPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat ccagtatgaa ttggataaag aaagtggggc tttaatggtg gatagagtgc
+       61 tttatggggc gcaaaattac cccgccaatt atggctttgt gcctaacact ttaggatctg
+      121 atggcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagcc gggagcgtgg
+      181 tgaaagtgcg cttggttggg gttttgaaca tggaagatga aagcggaatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gatattaatg
+      301 atttatccaa acacacttta gataaaatca agcatttttt tgaaacttac aaggatttag
+      361 agcctaataa atgggtgaaa gtcaaggggt ttgaaaac
+//
+
+LOCUS       LC271878                 398 bp    DNA     linear   BCT 12-SEP-2017
+DEFINITION  Helicobacter pylori ppa gene for inorganic pyrophosphatase, partial
+            cds, isolate: MS170.
+ACCESSION   LC271878
+VERSION     LC271878.1
+KEYWORDS    .
+SOURCE      Helicobacter pylori
+  ORGANISM  Helicobacter pylori
+            Bacteria; Proteobacteria; Epsilonproteobacteria; Campylobacterales;
+            Helicobacteraceae; Helicobacter.
+REFERENCE   1
+  AUTHORS   Subsomwong,P., Miftahussurur,M., Vilaichone,R., Ratanachuek,T.,
+            Suzuki,R., Uchida,T., Mahachai,V. and Yamaoka,Y.
+  TITLE     Helicobacter pylori Virulence Genes of Minor Ethnic Groups in North
+            Thailand
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 398)
+  AUTHORS   Subsomwong,P. and Yamaoka,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-2017) Contact:Phawinee Subsomwong Oita
+            University, Environmental and Preventive Medicine; 1-1 Idaigaoka,
+            Hasama-machi, Yufu, Oita 8795593, Japan
+FEATURES             Location/Qualifiers
+     source          1..398
+                     /organism="Helicobacter pylori"
+                     /mol_type="genomic DNA"
+                     /isolate="MS170"
+                     /isolation_source="human gastric tissue"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:210"
+                     /country="Thailand:Maesot"
+     gene            <1..>398
+                     /gene="ppa"
+     CDS             <1..>398
+                     /gene="ppa"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="inorganic pyrophosphatase"
+                     /protein_id="BBA45842.1"
+                     /translation="SNIKYELDKESGALMVDRVLYGAQNYPANYGFVPNTLGSDSDPV
+                     DALVLSDVAFQAGSVVKARLVGVLNMEDESGMDEKLLALPIDKIDPTHSYVKDIDDLS
+                     KHTLDKIKHFFETYKDLKPNKWVKVKGFEN"
+ORIGIN      
+        1 attctaatat caaatacgaa ttggataaag aaagcggggc tttaatggtg gatagggtgc
+       61 tttatggggc gcaaaattac cctgcaaatt atggctttgt gcctaacact ttaggatctg
+      121 atagcgaccc tgtagatgcg cttgttttaa gcgatgtggc ttttcaagcc gggagcgtgg
+      181 tgaaagcgcg tttggttggg gttttgaaca tggaagatga aagcgggatg gatgaaaaat
+      241 tactcgctct acccatagat aagatcgatc ccacgcattc ctatgtcaaa gatattgatg
+      301 atttatccaa acacacttta gataaaatca aacatttttt tgaaacttac aaggatttaa
+      361 agcctaataa atgggtaaaa gtcaaggggt ttgaaaac
+//

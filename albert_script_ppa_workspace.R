@@ -20,3 +20,5 @@ df_ppa10
 
 data.frame(AccessionID=df_ppa10)->dataf_ppa10
 write.csv(dataf_ppa10, "ppa_df_10_elements.csv")
+
+read.csv("ppa_df_10_elements.csv")
