@@ -19,13 +19,13 @@ singleString <- paste(readLines(fileName), collapse=" ")
 #define pattern
 paste(ppa_df[1,],".*?//")-> accID
 
+
 #obtain start and length of accession iD
 find_pattern_gregexpr<-(gregexpr(accID, singleString))
 #extract start of genbank pattern
 start<-unlist(find_pattern_gregexpr)
 #extract length to end of genbank sequence
-
-#use regexpr to obtain length of pattern
+  #use regexpr to obtain length of pattern
 find_pattern_regexpr <- regexpr(accID, singleString)
 #attr() finds length of pattern, sum up start position with length to obtain position for end of substring
 end <- start + attr(find_pattern_regexpr, "match.length")
