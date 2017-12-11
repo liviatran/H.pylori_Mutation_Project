@@ -5,7 +5,7 @@ ppa_accession_list<-read.table("ppa-accessions.seq")
 ppa_accession_list_10<-df_ppa[1:10,]
 
 #create df with accession id
-ppa_df<-data.frame(AccessionID=ppa_accession_list_10)
+ppa_df<-data.frame(AccessionID=ppa_accession_list_10,Sequence=NA,Country=NA)
 
 #define file, using a file that has 2 elements
 fileName <-"ppa-sequences-10.txt"
@@ -19,21 +19,17 @@ singleString <- paste(readLines(fileName), collapse=" ")
 #define pattern
 paste(ppa_df[1,],".*?//")-> accID
 
+source("function_create_substring_from_pattern.R")
 
-#obtain start and length of accession iD
-find_pattern_gregexpr<-(gregexpr(accID, singleString))
-#extract start of genbank pattern
-start<-unlist(find_pattern_gregexpr)
-#extract length to end of genbank sequence
-  #use regexpr to obtain length of pattern
-find_pattern_regexpr <- regexpr(accID, singleString)
-#attr() finds length of pattern, sum up start position with length to obtain position for end of substring
-end <- start + attr(find_pattern_regexpr, "match.length")
+newSubString(accID, singleString)-> string_one_ID
 
-#create new string of just that sequence's information
-one_genbank_string<-substring(singleString, start, end)
-#extract sequence and input into df
-one_genbank_string
+#extract sequence with extra characters
+newSubString("ORIGIN.*?//", string_one_ID) ->string_one_sequence
+
+#remove non-sequence characters
+gsub("[ORIGIN/]*\\d*\\s*", "", string_one_sequence, fixed=FALSE) ->string_sequence_clean
+string_sequence_clean -> ppa_df$Sequence[1]
+
 
 #extra country and put into df
 gregexpr("ountry", singleString)

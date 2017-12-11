@@ -1,6 +1,6 @@
 #function to find start and end of a pattern and makes a substring of it
 
-startendpos<-function(pattern,string){
+newSubString<-function(pattern,string){
 
 #obtain start and length of accession iD
 find_pattern_gregexpr<-(gregexpr(pattern, string))
@@ -15,5 +15,4 @@ end <- start + attr(find_pattern_regexpr, "match.length")-1
 newString<-substring(string, start, end)
 newString
 }
-print("To use this function, type startendpos('your pattern','your sequence')")
-
+print("To use this function, type newSubString('your pattern','your sequence') -> 'your variable'")
