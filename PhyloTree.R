@@ -5,9 +5,18 @@ library(ape)
 muty_df <- read.table("mutydf.csv")
 View(muty_df)
 
-## Converting dataframe to matrix containing sequence data and locus names
+## Make a string containing locus and countries
+paste(muty_df[1,1], "(", muty_df[1,7], ")")
+
+## For-loop to make a matrix of all loci and countries
+namelist <- matrix()
+for(n in 1:nrow(muty_df)){
+  paste(muty_df[n,1], "(", muty_df[n,7], ")") -> namelist[n]
+}
+
+## Converting dataframe to matrix containing sequence data and locus names with countries
 muty_matrix <- matrix(muty_df$Origin, byrow=TRUE)
-rownames(muty_matrix) <- muty_df$Locus
+rownames(muty_matrix) <- namelist
 View(muty_matrix)
 
 ## Convert matrix to sequence alignment file
