@@ -23,8 +23,8 @@ ppa_align
 
 ### (Found better method for sequence alignment conversion, keeping this code just in case):
 # Write matrix as fasta and re-import as sequence alignment file for use by phangorn
-# write.dna(ppa_matrix, "ppa-fasta-tree", format="fasta", colw=420)
-# ppa_align <- read.dna(ppa_matrix, file="ppa-fasta-tree", format="fasta")
+write.dna(ppa_matrix, "ppa-fasta-tree", format="fasta", colw=398)
+ppa_align <- read.dna(ppa_matrix, file="ppa-fasta-tree", format="fasta")
 
 
 ## Install "phangorn" package if not previously intalled:
