@@ -1,6 +1,6 @@
 #enviornments preparation
 #makes beep sound for end of for loop
-install.package("beepr")
+install.packages("beepr")
 library(genbankr)
 library(beepr)
 
