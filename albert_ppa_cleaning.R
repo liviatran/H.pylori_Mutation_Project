@@ -1,5 +1,9 @@
 #enviornments preparation
+#makes beep sound for end of for loop
+install.package("beepr")
 library(genbankr)
+library(beepr)
+
 #source function to create substring from pattern beginning and end
 source("function_create_substring_from_pattern.R")
 #read column of accessionID
@@ -14,30 +18,49 @@ fileName <-"ppa-sequences.gb"
 #read as string-- warning long process if big file
 singleString <- paste(readLines(fileName), collapse=" ")
 
-#for loop implementation off functions
+#for loop implementation of functions
 for(x in 1:nrow(ppa_df)){
   #find beginning of sequence ID (accession number)
   #define pattern
-  paste(ppa_df[x,1],".*?//")-> accID
+  paste(ppa_df[x,1],".*?(LOCUS|//)")-> accID
   #use function to make string with 1 accession id
   newSubString(accID, singleString)-> string_one_ID
-  #extract sequence with extra characters
-  newSubString("ORIGIN.*?//", string_one_ID) ->string_sequence_dirty
-  #remove non-sequence characters
-  gsub("[ORIGIN/]*\\d*\\s*", "", string_sequence_dirty, fixed=FALSE) ->string_sequence_clean
-  #input clean sequence into df
-  string_sequence_clean -> ppa_df$Sequence[x]
+  string_one_ID ->ppa_df$OneRecord[x] 
+  #if statement to indicate end of loop
+  if (x==nrow(ppa_df)){beep()}
 }
+  #extract sequence with extra characters
+for (x in 1:nrow(ppa_df)){
+  newSubString("ORIGIN.*?//", ppa_df$OneRecord[x]) -> ppa_df$UncleanSequence[x]
+  if (x==nrow(ppa_df)){beep()}
+}
+  
+  #remove non-sequence characters
+for (x in 1:nrow(ppa_df)){
+  gsub("[ORIGIN/]*\\d*\\s*", "", ppa_df$UncleanSequence[x], fixed=FALSE) -> ppa_df$Sequence[x]
+  if (x==nrow(ppa_df)){beep()}
+}
+
+
 #extract country location
-
+for (x in 1:nrow(ppa_df)) {
+ 
   #pattern for country
-  country_pattern<-"/country=.*?gene"
+  country_pattern<-"/country=.*\\s{1}(gene)*?"
   #use function to generate substring with country based on country pattern
-  newSubString(country_pattern, string_one_ID)->string_country_dirty
+  newSubString(country_pattern, ppa_df$OneRecord[x])-> ppa_df$CountryDirty[x]
   #clean country string for only country name
-  gsub("country|gene|*=*\\d*\\s*", "", string_country_dirty, fixed=FALSE) ->string_country_clean
+  gsub("country|gene|*=*\\d*\\s*", "", ppa_df$CountryDirty[x], fixed=FALSE) ->ppa_df$CountryClean1[x]
   #second round of cleaning to remove special characters
-  gsub("/*\"", "", string_country_clean) ->string_country_cleanest
+  gsub("/*\"", "", ppa_df$CountryClean1[x]) -> ppa_df$CountryCleanest[x]
   #input clean country string into df
-  ppa_df$Country[x]<-string_country_cleanest
+  ppa_df$Country[x]<-ppa_df$CountryCleanest[x]
+  if (x==nrow(ppa_df)){beep()}
+  }
 
+#Remove extra columns
+NULL->ppa_df$OneRecord
+NULL->ppa_df$UncleanSequences
+NULL->ppa_df$CountryDirty
+NULL->ppa_df$CountryClean1
+NULL->ppa_df$CountryCleanest
