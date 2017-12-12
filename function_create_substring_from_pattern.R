@@ -15,4 +15,3 @@ end <- start + attr(find_pattern_regexpr, "match.length")-1
 newString<-substring(string, start, end)
 newString
 }
-print("To use this function, type newSubString('your pattern','your sequence') -> 'your variable'")
