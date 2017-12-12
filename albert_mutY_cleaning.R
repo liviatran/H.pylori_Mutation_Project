@@ -1,19 +1,20 @@
+#this script is for extracting mutY genbank information into a dataframe of sequences, id, and country
+
 #enviornments preparation
 #makes beep sound for end of for loop
-install.packages("beepr")
-library(genbankr)
+
 library(beepr)
 
 #source function to create substring from pattern beginning and end
 source("function_create_substring_from_pattern.R")
 #read column of accessionID
-ppa_accession_list<-read.table("ppa-accessions.seq")
+mutY_accession_list<-read.table("mutY-accessions.seq")
 
 #create df with accession id
-ppa_df<-data.frame(AccessionID=ppa_accession_list,Sequence=NA,Country=NA)
+ppa_df<-data.frame(AccessionID=mutY_accession_list,Sequence=NA,Country=NA)
 
 #define file, using a file that has elements
-fileName <-"ppa-sequences.gb"
+fileName <-"mutY-sequences.gb"
 
 #read as string-- warning long process if big file
 singleString <- paste(readLines(fileName), collapse=" ")
