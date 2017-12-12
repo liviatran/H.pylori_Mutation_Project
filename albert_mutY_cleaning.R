@@ -61,7 +61,7 @@ for (x in 1:nrow(ppa_df)) {
 
 #Remove extra columns
 NULL->ppa_df$OneRecord
-NULL->ppa_df$UncleanSequences
+NULL->ppa_df$UncleanSequence
 NULL->ppa_df$CountryDirty
 NULL->ppa_df$CountryClean1
 NULL->ppa_df$CountryCleanest
