@@ -1,7 +1,9 @@
 #environments preparation
-#makes beep sound for end of for loop
-install.package("beepr")
 library(genbankr)
+library(seqinr)
+library(ape)
+
+#makes beep sound for end of for loop
 library(beepr)
 
 #source function to create substring from pattern beginning and end
