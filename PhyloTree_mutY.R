@@ -55,12 +55,12 @@ muty_nj <- NJ(muty_dist)
 plot(muty_nj, main="Neighbor Joining Model")
 
 # Determining best fit model - returns parisimony scores (goal is maximum parsimony)
-parsimony(muty_nj, muty_phy) # Result = 1436
-parsimony(muty_upgma, muty_phy) # Result = 1617
+parsimony(muty_nj, muty_phy) # Result = 3302
+parsimony(muty_upgma, muty_phy) # Result = 3501
 
 # Optimum parsimony is another option, will include nearest-neighbors and subtrees in parsimony calculations
-optim.parsimony(muty_nj, muty_phy) # Result = 1385
-optim.parsimony(muty_upgma, muty_phy) # Result = 1398
+optim.parsimony(muty_nj, muty_phy) # Result = 3141
+optim.parsimony(muty_upgma, muty_phy) # Result = 3142
 
 # Based on results, will proceed plotting using the UPGMA model for this dataset
 
