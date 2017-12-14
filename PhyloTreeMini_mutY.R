@@ -1,5 +1,4 @@
 library(seqinr)
-library(ape)
 
 ## Reading file made in "PracticeData.R" as dataframe variable
 muty_df <- read.csv("muty-tobecleaned")
@@ -88,26 +87,41 @@ for(n in 1:nrow(muty_matrix)){
   if(grepl("Guatemala", rownames(muty_matrix)[n]) == TRUE){
     (rbind(muty_matrix[n, 1, drop=FALSE], seqs_Guatemala) -> seqs_Guatemala)}
 }
-
-nrow(seqs_Malaysia)
-
-seqs_Thailand
-View(seqs_Thailand)
-
-grepl("Thailand", rownames(muty_matrix)[2])
-grepl("Thailand", rownames(muty_matrix)[200])
-
-# & (rownames(muty_matrix)[n] -> rownames(seqs_Thailand)[n]
-
-## Removing end-tail "NULL" rows in each matrix resulting from previous for-loop
    
-## Converting each country's matrix to its own sequence alignment file
 
-## Determining consensus sequence for each country
+## Placing consensus sequence for each country into single matrix
+finalcons <- matrix(data = c(consensus(seqs_Thailand),
+                     consensus(seqs_Bangladesh),
+                     consensus(seqs_France),
+                     consensus(seqs_Cambodia),
+                     consensus(seqs_Iran),
+                     consensus(seqs_Malaysia),
+                     consensus(seqs_Indonesia),
+                     consensus(seqs_Mongolia),
+                     consensus(seqs_Nepal),
+                     consensus(seqs_Bhutan),
+                     consensus(seqs_Japan),
+                     consensus(seqs_USA),
+                     consensus(seqs_Colombia),
+                     consensus(seqs_Lithuania),
+                     consensus(seqs_Germany),
+                     consensus(seqs_Netherlands),
+                     consensus(seqs_Australia),
+                     consensus(seqs_SouthAmerica),
+                     consensus(seqs_Peru),
+                     consensus(seqs_China),
+                     consensus(seqs_Gambia),
+                     consensus(seqs_Guatemala)))
 
-## Returning all consensus sequences to a single alignment fasta
+rownames(finalcons) <- c("Thailand", "Bangladesh", "France", "Cambodia", "Iran", "Malaysia",
+                         "Indonesia", "Mongolia", "Nepal", "Bhutan", "Japan", "USA", "Colombia",
+                         "Lithuania", "Germany", "Netherlands", "Australia", "South America",
+                         "Peru", "China", "Gambia", "Guatemala")
 
-## Mapping each consensus etc
+View(finalcons)
+
+
+## Continue coding from here tomorrow...
 
 
 #################################
@@ -173,10 +187,5 @@ ggtree(muty_upgma, aes(color=)) +
   theme(legend.position="right")
 
 View(muty_upgma)
-
-gzoom(muty_upgma, grep("Nepal", muty_upgma$tip.label))
-
-
-
 
 write.csv(muty_upgma, file="muty_upgma")
