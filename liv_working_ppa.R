@@ -3,16 +3,16 @@ setwd("~/bioinfofinal")
 library(ape)
 library(seqinr)
 ppadf<-read.csv("ppa_df_clean.df")
-
-View(ppaconsensus_matrix)
-
 ppafasta <- read.fasta("ppa-fasta-tree")
 ppaaligned <- read.alignment("ppa-fasta-tree", format = "fasta", forceToLower = T)
+ppaconsensus <-seqinr::consensus(ppaaligned)
 ppaconsensus_matrix <- read.dna("ppa-fasta-tree", format="fasta", as.character = TRUE)
 
-meanFreq <- function(ppafasta){
+numberofsequences
+
+meanfreq <- function(ppafasta){
   library(seqinr)
-  numberofsequences <- length(ppafasta)
+  numberofsequences <- length(ppadf$Sequence)
   ppaconsensus_length <- length(ppaconsensus)
   number_column <- seq(1, ppaconsensus_length)
   ppanewdf <- data.frame("num" = number_column, "MeanFreq" = 0, "wtnt" = ppaconsensus)
@@ -56,7 +56,7 @@ meanFreq <- function(ppafasta){
     if(current_base == "t"){
       ts_count <- current_matrix_base_count[["g"]]
     }
-    ppanewdf$meanfreq<- ts_count/number_of_seqs
+    ppanewdf$meanfreq<- ts_count/numberofsequences
   }
   ppanewdf$wtnt<-as.character(ppanewdf$wtnt)
   return(ppanewdf)
