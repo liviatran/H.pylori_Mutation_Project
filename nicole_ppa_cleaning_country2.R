@@ -9,3 +9,10 @@ ppa <- matrix()
 ppa <- ppadf[!(ppadf$Country == ""), ]
 ppa
 View(ppa)
+
+source("function_create_substring_from_pattern.R")
+
+  paste(ppa[1,2]) -> pattern
+
+  
+write.csv(ppa, file="ppa-tobecleaned")
