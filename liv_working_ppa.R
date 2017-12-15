@@ -9,11 +9,9 @@ ppaconsensus <-seqinr::consensus(ppaaligned)
 ppaconsensus_matrix <- read.dna("ppa-fasta-tree", format="fasta", as.character = TRUE)
 
 numberofsequences
-
-
 meanfreq <- function(ppafasta){
   library(seqinr)
-  numberofsequences <- length(ppaconsensus_matrix)
+  numberofsequences <- nrow(ppaconsensus_matrix)
   ppaconsensus_length <- length(ppaconsensus)
   number_column <- seq(1, ppaconsensus_length)
   ppanewdf <- data.frame("num" = number_column, "MeanFreq" = 0, "wtnt" = ppaconsensus)
