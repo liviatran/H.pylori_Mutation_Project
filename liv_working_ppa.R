@@ -18,7 +18,7 @@ meanFreq <- function(ppafasta){
   ppanewdf <- data.frame("num" = number_column, "MeanFreq" = 0, "wtnt" = ppaconsensus)
   for(x in 1:ppaconsensus_length){
     current_base <- ppaconsensus[x]
-    current_matrix_base_count <- ppaconsensus_matrix[,x]
+    current_matrix_base_count <- ppadf$Sequence
     ts_count <- 0
     if(current_base == "a"){
       ts_count <- current_matrix_base_count[["g"]]
