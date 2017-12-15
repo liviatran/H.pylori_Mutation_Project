@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 #enviornments preparation
 #makes beep sound for end of for loop
-install.package("beepr")
+install.packages("beepr")
+=======
+#environments preparation
+>>>>>>> 6ec4ece942cdbd9242ae941c6ddbf8e773d070d0
 library(genbankr)
+library(seqinr)
+library(ape)
+
+#makes beep sound for end of for loop
 library(beepr)
 
 #source function to create substring from pattern beginning and end
@@ -67,3 +75,24 @@ NULL->ppa_df$CountryCleanest
 
 ## Only adds rows from original data frame that DO NOT have an empty value for "country" column
 ppa <- ppa_df[!(ppa_df$Country == ""), ]
+
+### TO SAVE FULL INFO FILE AS A .CSV, REMOVE HASH AND RUN LINE BELOW
+# write.csv(ppa, file="FILENAME")
+
+### RUN THE FOLLOWING STEPS TO SAVE AS A FASTA FILE ###
+
+## For-loop to make a matrix of all loci and countries
+namelist <- matrix()
+for(n in 1:nrow(ppa)){
+  paste(ppa[n,3], "(", ppa[n,5], ")") -> namelist[n]
+}
+
+## Converting dataframe to matrix containing sequence data and locus names with countries
+ppa_matrix <- matrix(ppa$Sequence, byrow=TRUE)
+rownames(ppa_matrix) <- namelist
+
+## Convert matrix to sequence alignment file
+ppa_align <- as.alignment(ppa_matrix)
+
+## TO WRITE MATRIX AS FASTA FILE, REMOVE HASH AND RUN LINE BELOW
+# write.dna(ppa_matrix, "FILENAME", format="fasta", colw=398)
