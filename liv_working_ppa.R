@@ -8,7 +8,6 @@ ppaaligned <- read.alignment("ppa-fasta-tree", format = "fasta", forceToLower = 
 ppaconsensus <-seqinr::consensus(ppaaligned)
 ppaconsensus_matrix <- read.dna("ppa-fasta-tree", format="fasta", as.character = TRUE)
 
-numberofsequences
 meanfreq <- function(ppafasta){
   library(seqinr)
   numberofsequences <- nrow(ppaconsensus_matrix)
