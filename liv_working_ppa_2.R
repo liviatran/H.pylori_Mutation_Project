@@ -3,6 +3,7 @@ setwd("~/bioinfofinal")
 library(ape)
 library(seqinr)
 
+ppa_df<-read.csv("ppa_df_clean.df")
 ppafasta <- read.fasta("ppa-fasta-tree")
 ppaaligned <- read.alignment("ppa-fasta-tree", format = "fasta", forceToLower = TRUE)
 ppacons <- seqinr::consensus(ppaaligned)
@@ -35,4 +36,19 @@ for(x in 1:ppaconsensus_length){
 
 
 ts_count
-ts_count/numberofsequences
+ts_count/numberofsequences->meanfreq
+
+meanfreq
+Locus<-c(1:398)
+meanfreqdf<-data.frame(Locus)
+meanfreqdf$MeanFrequency<-meanfreq
+
+View(meanfreqdf)
+
+#most frequent mutations locations
+order_ppa<-order(meanfreqdf$MeanFrequency, decreasing=T)
+meanfreqdf[order_ppa,]->mostfrequentmutations
+
+#for a better visual 
+data.frame(mostfrequentmutations)->df
+View(df)
