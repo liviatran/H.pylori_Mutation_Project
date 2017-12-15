@@ -17,74 +17,22 @@ ppaconsensus_length <- nrow(ppaconsensus)
 
 ts_count <- matrix(data = 0, nrow=ppaconsensus_length)
 
+for(n in 1:numberofsequences){
 for(x in 1:ppaconsensus_length){
-  if(ppaconsensus[x,1] == "a" & comparison_matrix[x,1] == "a"){
-    ts_count[x,] <- ts_count[1]+1
+  if(ppaconsensus[x,1] == "a" & comparison_matrix[x,n] != "a"){
+    ts_count[x,] <- ts_count[x,]+1
   }
-  if(ppaconsensus[x,1] == "a" & comparison_matrix[x,1] != "a"){
-    ts_count[x,] <- ts_count[1]+0
+  if(ppaconsensus[x,1] == "t" & comparison_matrix[x,n] != "t"){
+    ts_count[x,] <- ts_count[x,]+1
   }
-}
+  if(ppaconsensus[x,1] == "g" & comparison_matrix[x,n] != "g"){
+    ts_count[x,] <- ts_count[x,]+1
+  }
+  if(ppaconsensus[x,1] == "c" & comparison_matrix[x,n] != "c"){
+    ts_count[x,] <- ts_count[x,]+1
+  }
+}}
 
 
 ts_count
 ts_count/numberofsequences
-
-
-
-
-
-
-###############
-
-number_column <- seq(1, ppaconsensus_length)
-ppanewdf <- data.frame("num" = number_column, "MeanFreq" = 0, "wtnt" = ppaconsensus)
-
-
-for(x in 1:ppaconsensus_length){
-    current_base <- ppaconsensus[x,2]
-    current_matrix_base_count <- comparison_matrix[x,2]
-    ts_count <- 0
-    if(current_base == "a"){
-      ts_count <- current_matrix_base_count[["g"]]
-    }
-    if(current_base == "a"){
-      ts_count <- current_matrix_base_count[["t"]]
-    }
-    if(current_base == "a"){
-      ts_count <- current_matrix_base_count[["c"]]
-    }
-    if(current_base == "g"){
-      ts_count <- current_matrix_base_count[["a"]]
-    }
-    if(current_base == "g"){
-      ts_count <- current_matrix_base_count[["t"]]
-    }
-    if(current_base == "g"){
-      ts_count <- current_matrix_base_count[["c"]]
-    }
-    if(current_base == "c"){
-      ts_count <- current_matrix_base_count[["t"]]
-    }
-    if(current_base == "c"){
-      ts_count <- current_matrix_base_count[["a"]]
-    }
-    if(current_base == "c"){
-      ts_count <- current_matrix_base_count[["g"]]
-    }
-    if(current_base == "t"){
-      ts_count <- current_matrix_base_count[["c"]]
-    }
-    if(current_base == "t"){
-      ts_count <- current_matrix_base_count[["a"]]
-    }
-    if(current_base == "t"){
-      ts_count <- current_matrix_base_count[["g"]]
-    }
-    ppanewdf[,2]<- ts_count/numberofsequences
-  }
-
-ppanewdf$wtnt<-as.character(ppanewdf$wtnt)
-return(ppanewdf)
-
-View(ppanewdf)
