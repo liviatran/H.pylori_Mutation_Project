@@ -1,3 +1,4 @@
+library(ape)
 library(seqinr)
 
 ## Reading file made in "PracticeData.R" as dataframe variable
@@ -90,28 +91,28 @@ for(n in 1:nrow(muty_matrix)){
    
 
 ## Placing consensus sequence for each country into single matrix
-finalcons <- matrix(data = c(consensus(seqs_Thailand),
-                     consensus(seqs_Bangladesh),
-                     consensus(seqs_France),
-                     consensus(seqs_Cambodia),
-                     consensus(seqs_Iran),
-                     consensus(seqs_Malaysia),
-                     consensus(seqs_Indonesia),
-                     consensus(seqs_Mongolia),
-                     consensus(seqs_Nepal),
-                     consensus(seqs_Bhutan),
-                     consensus(seqs_Japan),
-                     consensus(seqs_USA),
-                     consensus(seqs_Colombia),
-                     consensus(seqs_Lithuania),
-                     consensus(seqs_Germany),
-                     consensus(seqs_Netherlands),
-                     consensus(seqs_Australia),
-                     consensus(seqs_SouthAmerica),
-                     consensus(seqs_Peru),
-                     consensus(seqs_China),
-                     consensus(seqs_Gambia),
-                     consensus(seqs_Guatemala)))
+finalcons <- matrix(data = c(seqinr::consensus(seqs_Thailand),
+                     seqinr::consensus(seqs_Bangladesh),
+                     seqinr::consensus(seqs_France),
+                     seqinr::consensus(seqs_Cambodia),
+                     seqinr::consensus(seqs_Iran),
+                     seqinr::consensus(seqs_Malaysia),
+                     seqinr::consensus(seqs_Indonesia),
+                     seqinr::consensus(seqs_Mongolia),
+                     seqinr::consensus(seqs_Nepal),
+                     seqinr::consensus(seqs_Bhutan),
+                     seqinr::consensus(seqs_Japan),
+                     seqinr::consensus(seqs_USA),
+                     seqinr::consensus(seqs_Colombia),
+                     seqinr::consensus(seqs_Lithuania),
+                     seqinr::consensus(seqs_Germany),
+                     seqinr::consensus(seqs_Netherlands),
+                     seqinr::consensus(seqs_Australia),
+                     seqinr::consensus(seqs_SouthAmerica),
+                     seqinr::consensus(seqs_Peru),
+                     seqinr::consensus(seqs_China),
+                     seqinr::consensus(seqs_Gambia),
+                     seqinr::consensus(seqs_Guatemala)))
 
 rownames(finalcons) <- c("Thailand", "Bangladesh", "France", "Cambodia", "Iran", "Malaysia",
                          "Indonesia", "Mongolia", "Nepal", "Bhutan", "Japan", "USA", "Colombia",
@@ -121,14 +122,8 @@ rownames(finalcons) <- c("Thailand", "Bangladesh", "France", "Cambodia", "Iran",
 View(finalcons)
 
 
-## Continue coding from here tomorrow...
-
-
-#################################
-
-
 ## Convert matrix to sequence alignment file
-muty_align <- as.alignment(muty_matrix)
+muty_align <- ape::as.alignment(finalcons)
 class(muty_align)
 muty_align
 
@@ -166,12 +161,12 @@ muty_nj <- NJ(muty_dist)
 plot(muty_nj, main="Neighbor Joining Model")
 
 # Determining best fit model - returns parisimony scores (goal is maximum parsimony)
-parsimony(muty_nj, muty_phy) # Result = 3302
-parsimony(muty_upgma, muty_phy) # Result = 3501
+parsimony(muty_nj, muty_phy) # Result = 230
+parsimony(muty_upgma, muty_phy) # Result = 236
 
 # Optimum parsimony is another option, will include nearest-neighbors and subtrees in parsimony calculations
-optim.parsimony(muty_nj, muty_phy) # Result = 3141
-optim.parsimony(muty_upgma, muty_phy) # Result = 3142
+optim.parsimony(muty_nj, muty_phy) # Result = 227
+optim.parsimony(muty_upgma, muty_phy) # Result = 228
 
 # Based on results, will proceed plotting using the UPGMA model for this dataset
 
@@ -188,4 +183,4 @@ ggtree(muty_upgma, aes(color=)) +
 
 View(muty_upgma)
 
-write.csv(muty_upgma, file="muty_upgma")
+write.csv(muty_upgma, file="muty_consensus_upgma")
