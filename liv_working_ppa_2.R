@@ -54,5 +54,5 @@ data.frame(mostfrequentmutations)->df
 View(df)
 
 #mutation frequency plot 
-plot(muty_meanfreqdf, main="Mutation Frequencies", pch=2, col="blue")
+plot(meanfreqdf, main="ppa Mutation Frequencies", pch=2, col="blue")
 
