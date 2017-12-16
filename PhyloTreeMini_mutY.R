@@ -35,7 +35,7 @@ matrix() -> seqs_Lithuania
 matrix() -> seqs_Germany
 matrix() -> seqs_Netherlands
 matrix() -> seqs_Australia
-matrix() -> seqs_SouthAmerica
+matrix() -> seqs_SouthAfrica
 matrix() -> seqs_Peru
 matrix() -> seqs_China
 matrix() -> seqs_Gambia
@@ -78,7 +78,7 @@ for(n in 1:nrow(muty_matrix)){
   if(grepl("Australia", rownames(muty_matrix)[n]) == TRUE){
     (rbind(muty_matrix[n, 1, drop=FALSE], seqs_Australia) -> seqs_Australia)}
   if(grepl("South", rownames(muty_matrix)[n]) == TRUE){
-    (rbind(muty_matrix[n, 1, drop=FALSE], seqs_SouthAmerica) -> seqs_SouthAmerica)}
+    (rbind(muty_matrix[n, 1, drop=FALSE], seqs_SouthAfrica) -> seqs_SouthAfrica)}
   if(grepl("Peru", rownames(muty_matrix)[n]) == TRUE){
     (rbind(muty_matrix[n, 1, drop=FALSE], seqs_Peru) -> seqs_Peru)}
   if(grepl("China", rownames(muty_matrix)[n]) == TRUE){
@@ -108,7 +108,7 @@ finalcons <- matrix(data = c(seqinr::consensus(seqs_Thailand),
                      seqinr::consensus(seqs_Germany),
                      seqinr::consensus(seqs_Netherlands),
                      seqinr::consensus(seqs_Australia),
-                     seqinr::consensus(seqs_SouthAmerica),
+                     seqinr::consensus(seqs_SouthAfrica),
                      seqinr::consensus(seqs_Peru),
                      seqinr::consensus(seqs_China),
                      seqinr::consensus(seqs_Gambia),
@@ -116,7 +116,7 @@ finalcons <- matrix(data = c(seqinr::consensus(seqs_Thailand),
 
 rownames(finalcons) <- c("Thailand", "Bangladesh", "France", "Cambodia", "Iran", "Malaysia",
                          "Indonesia", "Mongolia", "Nepal", "Bhutan", "Japan", "USA", "Colombia",
-                         "Lithuania", "Germany", "Netherlands", "Australia", "South America",
+                         "Lithuania", "Germany", "Netherlands", "Australia", "South Africa",
                          "Peru", "China", "Gambia", "Guatemala")
 
 View(finalcons)
