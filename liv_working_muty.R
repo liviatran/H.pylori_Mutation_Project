@@ -43,10 +43,11 @@ muty_meanfreqdf$MeanFrequency<-muty_meanfreq
 
 View(muty_meanfreqdf)
 
-#most frequent mutations locations
 order_muty<-order(muty_meanfreqdf$MeanFrequency, decreasing=T)
 muty_meanfreqdf[order_muty,]->mostfrequentmutations
 
-#for a better visual 
 data.frame(mostfrequentmutations)->df
 View(df)
+
+
+plot(muty_meanfreqdf, main="MutY Gene Mutation Frequencies", pch=15, col="purple")->mutyplot
