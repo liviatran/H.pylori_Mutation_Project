@@ -7,7 +7,7 @@ by Nicole Allen, Livia Tran, and Albert Wong
 1. ppa-accessions.seq: list of ppa gene accession numbers for later use by Albert
 2. mutY-accessions.seq: list of mutY gene accession numbers for later use by Albert
 3. nicole_muty_cleaning_country2.R: code to take Albert's "mutY-clean.df" and remove all rows with no country listed
-	3. a. muty-tobecleaned: CSV file output of code
+	4. muty-tobecleaned: CSV file output of code
 4. nicole_ppa_cleaning_country2.R: code to take Albert's "ppa-clean.df" and remove all rows with no country listed
 	4a. ppa-tobecleaned: CSV file output of code
 5. ppa-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
