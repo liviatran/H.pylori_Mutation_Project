@@ -8,11 +8,11 @@ by Nicole Allen, Livia Tran, and Albert Wong
 2. mutY-accessions.seq: list of mutY gene accession numbers for later use by Albert
 3. nicole_muty_cleaning_country2.R: code to take Albert's "mutY-clean.df" and remove all rows with no country listed
 	4. muty-tobecleaned: CSV file output of code
-4. nicole_ppa_cleaning_country2.R: code to take Albert's "ppa-clean.df" and remove all rows with no country listed
-	4a. ppa-tobecleaned: CSV file output of code
-5. ppa-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
-6. muty-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
-7. PhyloTreeMini_mutY.R: Phylogenetic analysis of mutY genes based on consensus sequence from each country.
+5. nicole_ppa_cleaning_country2.R: code to take Albert's "ppa-clean.df" and remove all rows with no country listed
+	6. ppa-tobecleaned: CSV file output of code
+7. ppa-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
+8. muty-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
+9. PhyloTreeMini_mutY.R: Phylogenetic analysis of mutY genes based on consensus sequence from each country.
 	7a. muty_consensus_nj: contains data needed to construct mutY phylogenetic tree based on neighbor-joining calculations/analysis
 	7b. muty_consensus_upgma: contains data to construct mutY phylogenetic tree based on UPGMA calculations/analysis
 8. PhyloTreeMini_ppa.R: Phylogenetic analysis of ppa genes based on consensus sequence from each country.
