@@ -13,11 +13,11 @@ by Nicole Allen, Livia Tran, and Albert Wong
 7. ppa-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
 8. muty-fasta-tree: fasta file generated for Livia containing accession number and country of each ppa sequence
 9. PhyloTreeMini_mutY.R: Phylogenetic analysis of mutY genes based on consensus sequence from each country.
-	7a. muty_consensus_nj: contains data needed to construct mutY phylogenetic tree based on neighbor-joining calculations/analysis
-	7b. muty_consensus_upgma: contains data to construct mutY phylogenetic tree based on UPGMA calculations/analysis
-8. PhyloTreeMini_ppa.R: Phylogenetic analysis of ppa genes based on consensus sequence from each country.
-	8a. ppa_consensus_nj: contains data needed to construct ppa phylogenetic tree based on neighbor-joining calculations/analysis
-	8b. ppa_consensus_upgma: contains data to construct ppa phylogenetic tree based on UPGMA calculations/analysis
-9. PhyloTree_Plotting_Final.R: Plots both mutY and ppa phylogenetic trees based on output from "PhyloTreeMini" files.
-	9a. muty_tree.png: Result of mutY phylogenetic tree ggtree plot
-	9b. ppa_tree.png: Result of ppa phylogenetic tree ggtree plot
+	10. muty_consensus_nj: contains data needed to construct mutY phylogenetic tree based on neighbor-joining calculations/analysis
+	11. muty_consensus_upgma: contains data to construct mutY phylogenetic tree based on UPGMA calculations/analysis
+12. PhyloTreeMini_ppa.R: Phylogenetic analysis of ppa genes based on consensus sequence from each country.
+	13. ppa_consensus_nj: contains data needed to construct ppa phylogenetic tree based on neighbor-joining calculations/analysis
+	14. ppa_consensus_upgma: contains data to construct ppa phylogenetic tree based on UPGMA calculations/analysis
+15. PhyloTree_Plotting_Final.R: Plots both mutY and ppa phylogenetic trees based on output from "PhyloTreeMini" files.
+	16. muty_tree.png: Result of mutY phylogenetic tree ggtree plot
+	17. ppa_tree.png: Result of ppa phylogenetic tree ggtree plot
