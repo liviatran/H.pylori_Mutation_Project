@@ -183,4 +183,4 @@ ggtree(muty_upgma, aes(color=)) +
 
 View(muty_upgma)
 
-write.csv(muty_upgma, file="muty_consensus_upgma")
+write.tree(muty_upgma, file="muty_consensus_upgma")

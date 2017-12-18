@@ -4,6 +4,7 @@ library(seqinr)
 ## Reading file made in "PracticeData.R" as dataframe variable
 ppa_df <- read.csv("ppa-tobecleaned")
 View(ppa_df)
+
 ## For-loop to make a matrix of all loci and countries
 namelist <- matrix()
 for(n in 1:nrow(ppa_df)){
@@ -135,9 +136,8 @@ ppa_align
 # ppa_align <- read.dna(ppa_matrix, file="ppa-fasta-tree", format="fasta")
 
 
-## Install "phangorn" package if not previously intalled:
+## Install "phangorn" package if not previously installed:
 # install.packages("phangorn")
-
 library(phangorn)
 
 # Convert alignment to phyDat format for use in phangorn package
@@ -171,18 +171,3 @@ optim.parsimony(ppa_nj, ppa_phy) # Result = 102
 optim.parsimony(ppa_upgma, ppa_phy) # Result = 101
 
 # Based on results, will proceed plotting using the UPGMA model for this dataset
-
-
-## Install "ggtree" package if not previously installed:
-# install.packages("ggtree")
-library(ggtree)
-
-### Plotting code in progress...
-ggtree(ppa_upgma, aes(color=)) +
-  geom_tiplab(size=3, color="blue") +
-  scale_color_continuous(low='darkgreen', high='red') +
-  theme(legend.position="right")
-
-View(ppa_upgma)
-
-write.csv(ppa_upgma, file="ppa_consensus_upgma")
