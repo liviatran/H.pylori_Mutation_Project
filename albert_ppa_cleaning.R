@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-#enviornments preparation
+
+#enviornment preparation
 #makes beep sound for end of for loop
 install.packages("beepr")
-=======
-#environments preparation
->>>>>>> 6ec4ece942cdbd9242ae941c6ddbf8e773d070d0
+
 library(genbankr)
 library(seqinr)
 library(ape)
