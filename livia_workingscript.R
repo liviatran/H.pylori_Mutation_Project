@@ -17,6 +17,7 @@ mutygb <- import(con = "sequence(1).gb")
 View(sources(mutygb))
 getSeq(mutygb)
 
+
 read.csv("ppa-tobecleaned")->ppadf
 View(ppadf)
 library(beepr)
@@ -30,19 +31,19 @@ library(seqinr)
 library(ape)
 class(ppadf$SeqString)
 
-write.fasta(sequences = ppadf$SeqString, names=ppadf$V1, file.out="ppaseqs.fasta")
+
+write.fasta(sequences=ppadf$SeqString, names=ppadf$V1, file.out="ppaseqs.fasta")
 
 ppaseqinr<-read.fasta(file="ppaseqs.fasta")
-ppaaligned<-read.alignment("ppaseqs.fasta", format="fasta")
+ppaseqinr
 
-ppamatrix<-read.dna(file="ppaseqs.fasta", format="fasta", as.character=TRUE)
-class(ppamatrix)
-cons<-seqinr::consensus(ppaaligned)
+ppaaligned<-read.alignment(file="ppaseqs.fasta", format="fasta", forceToLower = TRUE)
+ppamatrix<-read.dna("ppaseqs.fasta", format="fasta", as.character=TRUE)
 
+as.matrix.alignment(ppaaligned)
+
+cons<-seqinr::consensus(ppamatrix)
 cons
 
-> write.fasta(list(ppadf$SeqString), list(names=ppadf$V1), file.out="ppaseqs.fasta")
-> write.fasta(list(ppadf$SeqString), names=(list(ppadf$V1)), file.out="ppaseqs.fasta")
-> write.fasta(ppadf$SeqString), names=list(ppadf$V1), file.out="ppaseqs.fasta")
-Error: unexpected ',' in "write.fasta(ppadf$SeqString),"
-> write.fasta(ppadf$SeqString, names=list(ppadf$V1), file.out="ppaseqs.fasta")
+write.fasta(list(ppadf$SeqString), names=(list(ppadf$V1)), file.out="ppaseqs.fasta")
+write.fasta(ppadf$SeqString, names=list(ppadf$V1), file.out="ppaseqs.fasta")

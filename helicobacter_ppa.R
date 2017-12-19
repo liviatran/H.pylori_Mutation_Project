@@ -3,6 +3,7 @@ install.packages("rentrez")
 library(rentrez)
 library(seqinr)
 
+
 #defines organims and gene of interest 
 Helicobacter_ppa<-"Helicobacter pylori[Organism] AND ppa[Gene]"
 
@@ -19,4 +20,6 @@ write(Helicobacter_ppa_seqs, "Helicobacter_ppa.fasta", sep="\n")
 
 #reads data as a fasta file 
 Helicobacter_seqinr_ppa<-read.fasta(file="Helicobacter_ppa.fasta")
+
+ppaaccess_list<-read.table("ppa-accessions.seq")
 

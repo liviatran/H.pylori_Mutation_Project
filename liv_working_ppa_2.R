@@ -64,5 +64,9 @@ data.frame(mostfrequentmutations)->df
 View(df)
 
 #mutation frequency plot 
+<<<<<<< HEAD
 plot(muty_meanfreqdf, main="PPA Gene Mutation Frequencies", pch=2, col="blue")->ppaplot
+=======
+plot(meanfreqdf, main="ppa Mutation Frequencies", pch=2, col="blue")
+>>>>>>> 1a7d44260e4dc5d82bd0afe68a6848a02ac52322
 

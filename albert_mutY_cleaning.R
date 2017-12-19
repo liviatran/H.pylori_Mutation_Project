@@ -60,21 +60,15 @@ for (x in 1:nrow(muty_df)) {
   }
 
 #Remove extra columns
-<<<<<<< HEAD
-NULL->ppa_df$OneRecord
-NULL->ppa_df$UncleanSequence
-NULL->ppa_df$CountryDirty
-NULL->ppa_df$CountryClean1
-NULL->ppa_df$CountryCleanest
 
-## Only adds rows from original data frame that DO NOT have an empty value for "country" column
-ppa <- ppa_df[!(ppa_df$Country == ""), ]
-=======
 NULL->muty_df$OneRecord
-NULL->muty_df$UncleanSequences
+NULL->muty_df$UncleanSequence
 NULL->muty_df$CountryDirty
 NULL->muty_df$CountryClean1
 NULL->muty_df$CountryCleanest
+
+## Only adds rows from original data frame that DO NOT have an empty value for "country" column
+ppa <- muty_df[!(muty_df$Country == ""), ]
 
 ## Only adds rows from original data frame that DO NOT have an empty value for "country" column
 muty <- muty_df[!(muty_df$Country == ""), ]
@@ -99,4 +93,4 @@ muty_align <- as.alignment(muty_matrix)
 
 ## TO WRITE MATRIX AS FASTA FILE, REMOVE HASH AND RUN LINE BELOW
 # write.dna(muty_matrix, "FILENAME", format="fasta", colw=420)
->>>>>>> f763dedc7f3396496435d3a313b1b4b9911513f3
+
