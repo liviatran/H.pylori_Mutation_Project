@@ -67,8 +67,6 @@ NULL->muty_df$CountryDirty
 NULL->muty_df$CountryClean1
 NULL->muty_df$CountryCleanest
 
-## Only adds rows from original data frame that DO NOT have an empty value for "country" column
-ppa <- muty_df[!(muty_df$Country == ""), ]
 
 ## Only adds rows from original data frame that DO NOT have an empty value for "country" column
 muty <- muty_df[!(muty_df$Country == ""), ]
