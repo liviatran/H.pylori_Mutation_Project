@@ -1,23 +1,35 @@
+#sets working directory
 setwd("~/bioinfofinal")
 
+#loads relevant libraries
 library(ape)
 library(seqinr)
 
-ppa_df<-read.csv("ppa_df_clean.df")
+#reads in fasta file
 ppafasta <- read.fasta("ppa-fasta-tree")
+
+#aligns sequences from fasta file
 ppaaligned <- read.alignment("ppa-fasta-tree", format = "fasta", forceToLower = TRUE)
+
+#finds consensus sequence from all data sequences
 ppacons <- seqinr::consensus(ppaaligned)
+
+#makes the consensus sequence into a data frame to match up with matrix 
 ppaconsensus <- as.data.frame.character(ppacons)
+
+#reads the fasta file into a DNA format 
 comparison_matrix <- t(read.dna("ppa-fasta-tree", format="fasta", as.character = TRUE))
 
-View(comparison_matrix)
-View(ppaconsensus)
-
+#stores columns of comparison matrix (i.e. nucleotides) into number of sequences
 numberofsequences <- ncol(comparison_matrix)
+
+#stores rows of ppa consensus into ppaconsensus_length 
 ppaconsensus_length <- nrow(ppaconsensus)
 
+#stores ts_count as 0 with the rows=to the consensensus length 
 ts_count <- matrix(data = 0, nrow=ppaconsensus_length)
 
+#for loop to add a count for when the consensus sequence does not match the matrix 
 for(n in 1:numberofsequences){
 for(x in 1:ppaconsensus_length){
   if(ppaconsensus[x,1] == "a" & comparison_matrix[x,n] != "a"){
@@ -35,15 +47,13 @@ for(x in 1:ppaconsensus_length){
 }}
 
 
-ts_count
+#calculates mean frequency
 ts_count/numberofsequences->meanfreq
 
-meanfreq
+#creates a data frame with locus and mean frequencies and stores into meanfreq variable
 Locus<-c(1:398)
 meanfreqdf<-data.frame(Locus)
 meanfreqdf$MeanFrequency<-meanfreq
-
-View(meanfreqdf)
 
 #most frequent mutations locations
 order_ppa<-order(meanfreqdf$MeanFrequency, decreasing=T)
@@ -54,5 +64,5 @@ data.frame(mostfrequentmutations)->df
 View(df)
 
 #mutation frequency plot 
-plot(muty_meanfreqdf, main="Mutation Frequencies", pch=2, col="blue")
+plot(muty_meanfreqdf, main="PPA Gene Mutation Frequencies", pch=2, col="blue")->ppaplot
 
