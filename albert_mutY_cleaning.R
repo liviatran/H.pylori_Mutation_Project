@@ -1,12 +1,14 @@
 #this script is for extracting mutY genbank information into a dataframe of sequences, id, and country
 
 #enviornments preparation
-#makes beep sound for end of for loop
+  #makes beep sound for end of for loop
+  #install.packages("beepr")
+  library(beepr)
+  #source function to create substring from pattern's start and end
+  #function is newSubString(pattern_beginning_to_end, string)
+  source("function_create_substring_from_pattern.R")
 
-library(beepr)
 
-#source function to create substring from pattern beginning and end
-source("function_create_substring_from_pattern.R")
 #read column of accessionID
 mutY_accession_list<-read.table("mutY-accessions.seq")
 
@@ -22,7 +24,7 @@ singleString <- paste(readLines(fileName), collapse=" ")
 #for loop implementation of functions
 for(x in 1:nrow(muty_df)){
   #find beginning of sequence ID (accession number)
-  #define pattern
+  #define pattern's beginning and end
   paste(muty_df[x,1],".*?(LOCUS|//)")-> accID
   #use function to make string with 1 accession id
   newSubString(accID, singleString)-> string_one_ID

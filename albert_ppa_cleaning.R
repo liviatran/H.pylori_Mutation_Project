@@ -1,17 +1,12 @@
-
+#this script is for extracting ppa gene sequence and country data from ppa genbank data file
 #enviornment preparation
-#makes beep sound for end of for loop
-#install.packages("beepr")
+  #makes beep sound for end of for loop
+  #install.packages("beepr")
+  library(beepr)
+  #source function to create substring from pattern's start and end
+    #function is newSubString(pattern_beginning_to_end, string)
+  source("function_create_substring_from_pattern.R")
 
-library(genbankr)
-library(seqinr)
-library(ape)
-
-#makes beep sound for end of for loop
-library(beepr)
-
-#source function to create substring from pattern beginning and end
-source("function_create_substring_from_pattern.R")
 #read column of accessionID
 ppa_accession_list<-read.table("ppa-accessions.seq")
 
@@ -21,13 +16,14 @@ ppa_df<-data.frame(AccessionID=ppa_accession_list,Sequence=NA,Country=NA)
 #define file, using a file that has elements
 fileName <-"ppa-sequences.gb"
 
-#read as string-- warning long process if big file
+#read file as string
 singleString <- paste(readLines(fileName), collapse=" ")
 
-#for loop implementation of functions
+
+#for loop implementation of functions -- warning long process if big file
 for(x in 1:nrow(ppa_df)){
   #find beginning of sequence ID (accession number)
-  #define pattern
+  #define pattern's beginning and end
   paste(ppa_df[x,1],".*?(LOCUS|//)")-> accID
   #use function to make string with 1 accession id
   newSubString(accID, singleString)-> string_one_ID
@@ -46,7 +42,6 @@ for (x in 1:nrow(ppa_df)){
   gsub("[ORIGIN/]*\\d*\\s*", "", ppa_df$UncleanSequence[x], fixed=FALSE) -> ppa_df$Sequence[x]
   if (x==nrow(ppa_df)){beep()}
 }
-
 
 #extract country location
 for (x in 1:nrow(ppa_df)) {
