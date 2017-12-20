@@ -27,12 +27,15 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 17. ppa_tree.png: Result of ppa phylogenetic tree ggtree plot
 
 ### Livia's Files:
-1. helicobacter_mutY.R:
-2. helicobacter_ppa.R:
-3. liv_working_muty.R: 
-4. liv_working_ppa_2.R:
-5. mutyplot.png:
-6. ppaplot.png:
-7. ppaseq.fasta: 
+1. liv_working_muty.R: working script for gene muty to gather fasta file, align sequences, make a
+matrix, find the consensus sequence, calculate mean frequency of difference from the consensus, order
+those in decreasing order, store those in a data frame for easier visualization, and a plot of 
+those mean frequencies
+2. liv_working_ppa_2.R: working script for gene ppa to gather fasta file, align sequences, make a
+matrix, find the consensus sequence, calculate mean frequency of difference from the consensus, order
+those in decreasing order, store those in a data frame for easier visualization, and a plot of 
+those mean frequencies
+3. mutyplot.png: plot of gene muty frequencies, with x axis as the loci and y axis as the mean frequency
+4. ppaplot.png: plot of gene ppa frequencies, with x axis as the loci and y axis as the mean frequency
 
 ### Albert's Files:
