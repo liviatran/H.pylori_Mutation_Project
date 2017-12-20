@@ -60,13 +60,10 @@ order_ppa<-order(meanfreqdf$MeanFrequency, decreasing=T)
 meanfreqdf[order_ppa,]->mostfrequentmutations
 
 #for a better visual 
-data.frame(mostfrequentmutations)->df
-View(df)
+data.frame(mostfrequentmutations)->df1
+View(df1)
 
 #mutation frequency plot 
-<<<<<<< HEAD
 plot(muty_meanfreqdf, main="PPA Gene Mutation Frequencies", pch=2, col="blue")->ppaplot
-=======
-plot(meanfreqdf, main="ppa Mutation Frequencies", pch=2, col="blue")
->>>>>>> 1a7d44260e4dc5d82bd0afe68a6848a02ac52322
+
 

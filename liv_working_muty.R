@@ -60,8 +60,8 @@ order_muty<-order(muty_meanfreqdf$MeanFrequency, decreasing=T)
 muty_meanfreqdf[order_muty,]->mostfrequentmutations
 
 #for a better visual 
-data.frame(mostfrequentmutations)->df
-View(df)
+data.frame(mostfrequentmutations)->df2
+View(df2)
 
 #mutation frequency plot 
 plot(muty_meanfreqdf, main="MutY Gene Mutation Frequencies", pch=15, col="purple")->mutyplot
