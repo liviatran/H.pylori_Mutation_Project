@@ -7,7 +7,6 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 3. mutY-accessions.seq: list of mutY Accession IDs downloaded from NCBI (corresponds to GenBank files)
 4. ppa-accessions.seq: list of ppa Accession IDs downloaded from NCBI (corresponds to GenBank files)
 
-
 ### Albert's Files:
 1.function_create_substring_from_pattern.R: a script defining a function, newSubString() that will require input of a string pattern's beginning and end, outputting the exact string that has this beginning and end.
 2. albert_ppa_cleaning.R: script using newSubString() and Accession ID to extract ppa gene sequences and country obtained. Combined with nicole_mut_cleaning_country2.R to remove sequences with no countries specified. 
@@ -54,6 +53,3 @@ those in decreasing order, store those in a data frame for easier visualization,
 those mean frequencies
 3. mutyplot.png: plot of gene muty frequencies, with x axis as the loci and y axis as the mean frequency
 4. ppaplot.png: plot of gene ppa frequencies, with x axis as the loci and y axis as the mean frequency
-
-### Albert's Files:
->>>>>>> af1e22c098ea040b1711d5d5aafc41f913a09a60
