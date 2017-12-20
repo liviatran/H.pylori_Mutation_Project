@@ -8,11 +8,11 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 4. ppa-accessions.seq: list of ppa Accession IDs downloaded from NCBI (corresponds to GenBank files)
 
 ### Albert's Files:
-1.function_create_substring_from_pattern.R: a script defining a function, newSubString() that will require input of a string pattern's beginning and end, outputting the exact string that has this beginning and end.
+1. function_create_substring_from_pattern.R: a script defining a function, newSubString() that will require input of a string pattern's beginning and end, outputting the exact string that has this beginning and end.
 2. albert_ppa_cleaning.R: script using newSubString() and Accession ID to extract ppa gene sequences and country obtained. Combined with nicole_mut_cleaning_country2.R to remove sequences with no countries specified. 
-3.ppa-clean.df: dataframe with ppa Accession ID, sequence, and country
+3. ppa-clean.df: dataframe with ppa Accession ID, sequence, and country
 4. albert_mutY_cleaning.R: same as albert_ppa_cleaning.R, creating dataframe mutY-clean.df
-5.mutY-clean.df: data frame containing mutY Accession ID, sequence, and country
+5. mutY-clean.df: data frame containing mutY Accession ID, sequence, and country
 
 ### Nicole's Files (Order of Use):
 1. ppa-accessions.seq: list of ppa gene accession numbers for later use by Albert
@@ -34,15 +34,6 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 17. ppa_tree.png: Result of ppa phylogenetic tree ggtree plot
 
 ### Livia's Files:
-<<<<<<< HEAD
-1. helicobacter_mutY.R:
-2. helicobacter_ppa.R:
-3. liv_working_muty.R: 
-4. liv_working_ppa_2.R:
-5. mutyplot.png:
-6. ppaplot.png:
-7. ppaseq.fasta: 
-=======
 1. liv_working_muty.R: working script for gene muty to gather fasta file, align sequences, make a
 matrix, find the consensus sequence, calculate mean frequency of difference from the consensus, order
 those in decreasing order, store those in a data frame for easier visualization, and a plot of 
