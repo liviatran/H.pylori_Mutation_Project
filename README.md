@@ -1,6 +1,12 @@
 # File Explanations/Information
 Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 
+### General Files:
+1. mutY-sequences.gb: GenBank file containing NCBI data from 1500+ samples for mutY gene of H. pylori
+2. ppa-sequences.gb: GenBank file containing NCBI data from 1500+ samples for ppa gene of H. pylori
+3. mutY-accessions.seq: list of mutY Accession IDs downloaded from NCBI (corresponds to GenBank files)
+4. ppa-accessions.seq: list of ppa Accession IDs downloaded from NCBI (corresponds to GenBank files)
+
 ### Nicole's Files (In Order of Intended Use):
 1. ppa-accessions.seq: list of ppa gene accession numbers for later use by Albert
 2. mutY-accessions.seq: list of mutY gene accession numbers for later use by Albert
