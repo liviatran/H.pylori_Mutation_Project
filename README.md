@@ -20,6 +20,6 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 16. muty_tree.png: Result of mutY phylogenetic tree ggtree plot
 17. ppa_tree.png: Result of ppa phylogenetic tree ggtree plot
 
-###Livia's Files:
+### Livia's Files:
 
 ### Albert's Files:
