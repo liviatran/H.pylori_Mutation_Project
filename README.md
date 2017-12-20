@@ -7,7 +7,7 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 3. mutY-accessions.seq: list of mutY Accession IDs downloaded from NCBI (corresponds to GenBank files)
 4. ppa-accessions.seq: list of ppa Accession IDs downloaded from NCBI (corresponds to GenBank files)
 
-### Nicole's Files (In Order of Intended Use):
+### Nicole's Files (Order of Use):
 1. ppa-accessions.seq: list of ppa gene accession numbers for later use by Albert
 2. mutY-accessions.seq: list of mutY gene accession numbers for later use by Albert
 3. nicole_muty_cleaning_country2.R: code to take Albert's "mutY-clean.df" and remove all rows with no country listed
@@ -27,5 +27,12 @@ Bioinformatics Class Final Project by Nicole Allen, Livia Tran, and Albert Wong
 17. ppa_tree.png: Result of ppa phylogenetic tree ggtree plot
 
 ### Livia's Files:
+1. helicobacter_mutY.R:
+2. helicobacter_ppa.R:
+3. liv_working_muty.R: 
+4. liv_working_ppa_2.R:
+5. mutyplot.png:
+6. ppaplot.png:
+7. ppaseq.fasta: 
 
 ### Albert's Files:
